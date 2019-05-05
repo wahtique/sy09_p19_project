@@ -2,8 +2,6 @@
 
 UTC Spring 2019 SY09 Data Mining Project
 
-Data = https://www.kaggle.com/terminus7/pokemon-challenge
-
 Authors :
  - Brahmi Mehdi
  - Schlegel Antoine
