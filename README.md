@@ -17,6 +17,6 @@ The aim of this project is to build a model capable to predict the outcome of a 
 The dataset is the one used for 
 [the Weedle's cave challenge on kaggle](https://www.kaggle.com/terminus7/pokemon-challenge)
 It is made of 3 files :
-    - pokemon.csv : contains the caracteristicces of Pokemon
-    - combats.csv : contains encounters outome between pokemons
-    - test.csv : test data
+- pokemon.csv : contains the caracteristicces of Pokemon
+- combats.csv : contains encounters outome between pokemons
+- test.csv : test data
