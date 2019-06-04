@@ -19,5 +19,5 @@ pred <- predict(model, test[,1:10])
 # matrice de confusion
 conf <- confusionMatrix(data = pred, reference = test$winner)
 # save the model to avoid repeting everythin all the time
-save(model, file =  "models/randomForest500.rda")
-# model <- load("models/randomForest500.rda")
+saveRDS(model, file =  "models/randomForest500.rda")
+# model2 <- readRDS("models/randomForest500.rda")
