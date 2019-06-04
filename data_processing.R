@@ -79,6 +79,7 @@ AB_advantage_tibble <- function(
     wins <- ifelse(combats$Winner==combats$First_pokemon,1,2)
     wins <- tibble(winner = wins)
     tmp <- bind_cols(tmp, wins)
+    tmp$winner <- as.factor(tmp$winner)
   }
   return(tmp)
 }
