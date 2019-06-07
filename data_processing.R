@@ -43,6 +43,10 @@ combat_advantage_tibble <- function(
     setTxtProgressBar(pb, i)
   }
   res <- bind_rows(res)
+  res$typeA1 <- as.factor(res$typeA1)
+  res$typeB1 <- as.factor(res$typeB1)
+  res$typeA2 <- as.factor(res$typeA2)
+  res$typeB2 <- as.factor(res$typeB2)
   close(pb)
   return(res)
 }
@@ -72,9 +76,10 @@ AB_advantage_tibble <- function(
   )
   tmp <- combat_advantage_tibble(tmp, pokemon)
   if(has_winners){
-    wins <- ifelse(combats$Winner==combats$First_pokemon,0,1)
+    wins <- ifelse(combats$Winner==combats$First_pokemon,1,2)
     wins <- tibble(winner = wins)
     tmp <- bind_cols(tmp, wins)
+    tmp$winner <- as.factor(tmp$winner)
   }
   return(tmp)
 }

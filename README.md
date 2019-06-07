@@ -20,3 +20,7 @@ It is made of 3 files :
 - pokemon.csv : contains the caracteristicces of Pokemon
 - combats.csv : contains encounters outome between pokemons
 - test.csv : test data
+
+## Requirements
+
+Packages : tidyverse, caret, randomForest
